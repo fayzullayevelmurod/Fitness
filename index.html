@@ -5,6 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fitnes</title>
+	<!-- Oswald font -->
+	<link rel="stylesheet" href="src/fonts/Oswald/stylesheet.css">
+	<!-- Jost font -->
+	<link rel="stylesheet" href="src/fonts/Jost/stylesheet.css">
 	<!-- aos css -->
 	<link rel="stylesheet" href="src/libs/aos.min.css">
 	<!-- swiper css -->
@@ -20,13 +24,228 @@
 	<div class="wrapper overflow-hidden">
 
 		<!-- header -->
-		<header class="header">
+		<header class="header bg-black py-[34px]">
+			<div class="container flex items-center justify-between">
+				<a class="flex items-center gap-5" href="#!">
+					<img src="src/images/logo.png" alt="logo" width="60" height="64">
+					<h4 class="header-logo__title font-normal text-2xxl text-white leading-[37px]">
+						Название компании
+						<span class="text-[#FFFFFF99] block text-base font-Jost leading-[23px]">Фитнес-центр</span>
+					</h4>
+				</a>
 
+				<div class="flex items-center gap-10">
+					<div class="flex items-center gap-[12px]">
+						<img src="src/images/icons/location.svg" alt="location" width="13" height="16">
+						<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!"><span
+								class="font-light">Москва</span>,
+							Лубянский проезд, дом</a>
+					</div>
+					<div class="flex items-center gap-[12px]">
+						<img src="src/images/icons/phone.svg" alt="phone" width="14" height="16">
+						<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!">+7 (000) 000-00-00</a>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<!-- main -->
 		<main class="main">
 
+			<section class="bg-hero-bg bg-no-repeat bg-cover pb-[155px] pt-10">
+				<div class="container">
+					<ul class="flex gap-10 mb-[94px]">
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Добро пожаловать</a>
+						</li>
+						<li>
+							<a class="flex items-center gap-[18px] font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">
+								О компании
+								<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
+							</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Новости</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Отзывы о нас</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Контакты</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
+						</li>
+					</ul>
+					<h1 class="hero-title">ФИТНЕС-ЦЕНТР</h1>
+					<h2 class="hero-title__sm">НОВОГО ПОКОЛЕНИЯ</h2>
+					<div class="flex items-center gap-4 mb-[60px]">
+						<a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-center" href="#!">
+							<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
+						</a>
+						<a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-center" href="#!">
+							<img src="src/images/icons/telegram.svg" alt="telegram" width="15" height="13">
+						</a>
+						<a class="bg-white rounded-full w-10 h-10 flex items-center justify-center text-center" href="#!">
+							<img src="src/images/icons/whatsapp.svg" alt="whatsapp" width="15" height="15">
+						</a>
+					</div>
+					<a class="bg-red rounded-[20px] py-[27px] px-[50px] text-white font-medium text-[25px] leading-[35px]"
+						href="#!">ЗАПИСАТЬСЯ НА
+						ЗАНЯТИЕ</a>
+				</div>
+			</section>
+
+			<section class="bg-services-bg bg-no-repeat bg-[length:100%_100%] pb-[95px] pt-[80px]">
+				<div class="container">
+					<h2 class="title-text__sm">УСЛУГИ</h2>
+					<h1 class="title-text">МЫ ПРЕДЛАГАЕМ</h1>
+
+					<div class="swiper services-swiper mt-[50px] pb-[74px]">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a class="slide-box" href="#!">
+									<div
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img1.png"
+											alt="fitnes-img1">
+										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
+											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
+										</div>
+										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+												src="src/images/dumbell.png" alt="boxing">
+										</div>
+									</div>
+
+									<div class="text-center mt-[40px]">
+										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
+									</div>
+								</a>
+
+							</div>
+
+							<div class="swiper-slide">
+								<a class="slide-box" href="#!">
+									<div
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img2.png"
+											alt="fitnes-img2">
+										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
+											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">КАРДИОЗОНА</h4>
+										</div>
+										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+												src="src/images/bike.png" alt="bike">
+										</div>
+									</div>
+									<div class="text-center mt-[40px]">
+										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a class="slide-box" href="#!">
+									<div
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img3.png"
+											alt="fitnes-img1">
+										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
+											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">БОЕВЫЕ ИСКУССТВА</h4>
+										</div>
+										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+												src="src/images/boxing.png" alt="boxing">
+										</div>
+									</div>
+									<div class="text-center mt-[40px]">
+										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a class="slide-box" href="#!">
+									<div
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img1.png"
+											alt="fitnes-img1">
+										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
+											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
+										</div>
+										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+												src="src/images/dumbell.png" alt="boxing">
+										</div>
+									</div>
+
+									<div class="text-center mt-[40px]">
+										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
+									</div>
+								</a>
+
+							</div>
+
+							<div class="swiper-slide">
+								<a class="slide-box" href="#!">
+									<div
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img2.png"
+											alt="fitnes-img2">
+										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
+											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">КАРДИОЗОНА</h4>
+										</div>
+										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+												src="src/images/bike.png" alt="bike">
+										</div>
+									</div>
+									<div class="text-center mt-[40px]">
+										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
+									</div>
+								</a>
+							</div>
+
+							<div class="swiper-slide">
+								<a class="slide-box" href="#!">
+									<div
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img3.png"
+											alt="fitnes-img1">
+										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
+											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">БОЕВЫЕ ИСКУССТВА</h4>
+										</div>
+										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+												src="src/images/boxing.png" alt="boxing">
+										</div>
+									</div>
+									<div class="text-center mt-[40px]">
+										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex gap-5">
+						<div class="swiper-button__prev swiper-button">
+							<svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.6024 30.48L0.397644 15.2752L15.6024 0.47998L5.80609 15.48L15.6024 30.48Z" fill="white" />
+							</svg>
+						</div>
+						<div class="swiper-button__next swiper-button">
+							<svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.397644 30.48L15.6024 15.2752L0.397644 0.47998L10.1939 15.48L0.397644 30.48Z" fill="white" />
+							</svg>
+						</div>
+					</div>
+
+
+				</div>
+			</section>
 
 		</main>
 
