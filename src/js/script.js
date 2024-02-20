@@ -14,8 +14,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		slidesPerView: 3,
 		spaceBetween: 40,
 		navigation: {
-			nextEl: ".swiper-button__next",
-			prevEl: ".swiper-button__prev",
+			nextEl: ".swiper-button__next2",
+			prevEl: ".swiper-button__prev2",
 		},
 		loop: true,
 		speed: 800
