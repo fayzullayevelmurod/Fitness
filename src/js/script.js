@@ -17,7 +17,16 @@ window.addEventListener('DOMContentLoaded', () => {
 			nextEl: ".swiper-button__next2",
 			prevEl: ".swiper-button__prev2",
 		},
+		centeredSlides: true,
 		loop: true,
 		speed: 800
 	});
+
+	// light gallery
+	lightGallery(document.querySelector('.lightgallery'), {
+		licenseKey: 'your_license_key',
+		speed: 500,
+		controls: true,
+	});
+	// lightGallery(document.getElementById('lightgallery'))
 })
