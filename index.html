@@ -28,7 +28,7 @@
 	<div class="wrapper overflow-hidden">
 
 		<!-- header -->
-		<header class="header bg-black py-[34px]">
+		<header class="header bg-black py-[34px]" id="header">
 			<div class="container flex items-center justify-between">
 				<a class="flex items-center gap-5" href="#!">
 					<img src="src/images/logo.png" alt="logo" width="60" height="64">
@@ -73,7 +73,7 @@
 								<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
 							</a>
 							<ul
-								class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[25px] left-0 bg-black-60 text-white py-[20px] px-[30px] rounded-md w-[150px]">
+								class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[25px] left-0 bg-black-50 text-white py-[20px] px-[30px] rounded-md w-[150px]">
 								<li>
 									<a href="#!">Value Value</a>
 								</li>
@@ -740,14 +740,25 @@
 						src="https://yandex.com/map-widget/v1/?ll=37.617683%2C55.755710&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&tab=CHZ_TOURISM&z=19.38"
 						width="100%" height="450" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
-				<div class="container flex items-end justify-between pt-10 pb-[60px]">
-					<div>
+				<div class="container pt-10 pb-[60px]">
+					<div class="flex items-center justify-between">
 						<p class="text-white text-base font-Jost">Copyright © 2023 - 2024 Название компании</p>
-						<p class="text-[#FFFFFFCC] text-[15px] leading-[22px] mt-[23px] mb-[5px] font-Jost">ИНН: 123456789098</p>
-						<p class="text-[#FFFFFFCC] text-[15px] leading-[22px] font-Jost">ОГРНИП: 123456789012345</p>
+						<a class="rotate-90 swiper-button" href="#header">
+							<svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.6024 30.48L0.397644 15.2752L15.6024 0.47998L5.80609 15.48L15.6024 30.48Z" fill="white" />
+							</svg>
+
+						</a>
 					</div>
-					<p class="text-[#FFFFFFCC] text-sm leading-[20px] font-Jost">Поддержка. <a class="underline"
-							href="#!">Разработка сайтов</a> в Megagroup.</p>
+					<div class="flex items-end justify-between">
+						<div>
+							<p class="text-[#FFFFFFCC] text-[15px] leading-[22px] mt-[23px] mb-[5px] font-Jost">ИНН: 123456789098</p>
+							<p class="text-[#FFFFFFCC] text-[15px] leading-[22px] font-Jost">ОГРНИП: 123456789012345</p>
+						</div>
+						<p class="text-[#FFFFFFCC] text-sm leading-[20px] font-Jost">Поддержка. <a class="underline"
+								href="#!">Разработка
+								сайтов</a> в Megagroup.</p>
+					</div>
 				</div>
 			</section>
 
