@@ -73,14 +73,14 @@ window.addEventListener('DOMContentLoaded', () => {
 	AOS.init();
 
 	// menu 
-	const closeBtn = document.querySelector('#close-button');
+	const closeBtn = document.querySelector('.close-btn');
 	const openBtn = document.querySelector('#open-btn');
-	const menu = document.querySelector('#menu');
+	const menu = document.querySelector('.menu');
 
 	openBtn.addEventListener('click', () => {
-		menu.classList.remove('translate-x-[-100%]');
+		menu.classList.remove('active-menu');
 	})
 	closeBtn.addEventListener('click', () => {
-		menu.classList.add('translate-x-[-100%]');
+		menu.classList.add('active-menu');
 	})
 })

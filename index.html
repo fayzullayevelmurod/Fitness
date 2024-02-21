@@ -29,95 +29,32 @@
 
 		<!-- header -->
 		<header class="header bg-black py-[34px]" id="header">
-			<div class="container flex gap-5 flex-wrap items-center justify-between">
-				<a class="flex items-center md:gap-5 gap-[10px]" href="#!">
+			<div class="container flex 2md:flex-row flex-col gap-5 flex-wrap 2md:items-center justify-between">
+				<a class="flex items-center justify-normal xsm:flex-row xsm:mt-0 mt-[26px] flex-col xsm:text-left text-center md:gap-5 gap-[10px]"
+					href="#!">
 					<img src="src/images/logo.png" alt="logo" width="60" height="64">
-					<h4 class="header-logo__title font-normal md:text-2xxl text-18px text-white leading-[37px]">
+					<h4 class="header-logo__title font-normal text-2xxl  text-white leading-[37px]">
 						Название компании
-						<span class="text-[#FFFFFF99] block text-base font-Jost leading-[23px]">Фитнес-центр</span>
+						<span
+							class="text-[#FFFFFF99] block xsm:text-base text-[15px] font-Jost xsm:leading-[23px] leading-[21px]">Фитнес-центр</span>
 					</h4>
 				</a>
-
-				<div id="menu"
-					class="1md:relative 1md:hidden block absolute 1md:translate-x-0 translate-x-[-100%] top-0 1md:bg-transparent bg-black-50 w-full h-full left-0 1md:p-0 px-10 pt-10 z-10">
-					<button class="1md:hidden absolute top-10 right-10" id="close-button">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-							class="w-6 h-6">
-							<path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
-								d="M6 18 18 6M6 6l12 12" />
-						</svg>
-					</button>
-					<ul class="1md:hidden">
-						<li>
-							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
-						</li>
-						<li>
-							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Добро пожаловать</a>
-						</li>
-						<li class="relative dropdown-box">
-							<a class="flex items-center gap-[18px] font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">
-								О компании
-								<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
-							</a>
-							<ul
-								class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[25px] left-0 bg-slate-500 text-white py-[20px] px-[30px] rounded-md w-[150px]">
-								<li>
-									<a href="#!">Value Value</a>
-								</li>
-								<li>
-									<a href="#!">Value</a>
-								</li>
-								<li>
-									<a href="#!">Value</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Новости</a>
-						</li>
-						<li>
-							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Отзывы о нас</a>
-						</li>
-						<li>
-							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Контакты</a>
-						</li>
-						<li>
-							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
-						</li>
-					</ul>
-
-					<div class="flex 1md:flex-row flex-col 1md:items-center 1md:gap-10 gap-5 1md:mt-0 mt-5">
-						<div class="flex items-center gap-[12px]">
-							<img src="src/images/icons/location.svg" alt="location" width="13" height="16">
-							<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!"><span
-									class="font-light">Москва</span>,
-								Лубянский проезд, дом</a>
-						</div>
-						<div class="flex items-center gap-[12px]">
-							<img src="src/images/icons/phone.svg" alt="phone" width="14" height="16">
-							<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!">+7 (000)
-								000-00-00</a>
-						</div>
-					</div>
-				</div>
-				<div class="1md:flex hidden 1md:flex-row flex-col 1md:items-center 1md:gap-10 gap-5 1md:mt-0 mt-5">
-					<div class="flex items-center gap-[12px]">
-						<img src="src/images/icons/location.svg" alt="location" width="13" height="16">
+				<div
+					class="flex 1md:flex-row xsm:justify-normal justify-center flex-col 1md:items-center 1md:gap-10 gap-5 1md:mt-0 xsm:mt-5">
+					<div class="flex items-center xsm:justify-normal justify-center gap-[12px]">
+						<img class="xsm:block hidden" src="src/images/icons/location.svg" alt="location" width="13" height="16">
 						<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!"><span
 								class="font-light">Москва</span>,
 							Лубянский проезд, дом</a>
 					</div>
-					<div class="flex items-center gap-[12px]">
-						<img src="src/images/icons/phone.svg" alt="phone" width="14" height="16">
+					<div class="flex items-center xsm:justify-normal justify-center gap-[12px]">
+						<img class="xsm:block hidden" src="src/images/icons/phone.svg" alt="phone" width="14" height="16">
 						<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!">+7 (000)
 							000-00-00</a>
 					</div>
 				</div>
-				<button class="1md:hidden" id="open-btn">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
-						class="w-6 h-6">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-					</svg>
+				<button class="2md:hidden fixed z-[999] top-0 right-[0%]" id="open-btn">
+					<img src="src/images/icons/bars.svg" alt="">
 				</button>
 			</div>
 		</header>
@@ -125,9 +62,63 @@
 		<!-- main -->
 		<main class="main">
 			<!-- hero-section -->
-			<section class="bg-hero-bg bg-no-repeat bg-cover md:pb-[155px] pb-[50px] pt-10">
+			<section class="bg-hero-bg hero-bg bg-no-repeat bg-cover md:pb-[155px] pb-[50px] pt-10">
 				<div class="container">
-					<ul class="1md:flex hidden 2md:gap-10 gap-5 mb-[94px] ">
+					<div class="menu active-menu fixed 2md:hidden">
+						<ul class="2md:flex 2md:relative 2md:gap-10 gap-5 mb-[94px]">
+							<button class="2md:hidden close-btn">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+									stroke="currentColor" class="w-6 h-6">
+									<path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+										d="M6 18 18 6M6 6l12 12" />
+								</svg>
+							</button>
+							<li>
+								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
+							</li>
+							<li>
+								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Добро пожаловать</a>
+							</li>
+							<li class="relative dropdown-box">
+								<a class="flex items-center gap-[18px] font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">
+									О компании
+									<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
+								</a>
+								<ul
+									class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[55px] left-0 bg-[#18191d] text-white py-[20px] px-[30px] rounded-md w-[100%]">
+									<li>
+										<a href="#!">Value Value</a>
+									</li>
+									<li>
+										<a href="#!">Value</a>
+									</li>
+									<li>
+										<a href="#!">Value</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Новости</a>
+							</li>
+							<li>
+								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Отзывы о нас</a>
+							</li>
+							<li>
+								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Контакты</a>
+							</li>
+							<li>
+								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="2md:flex hidden 2md:gap-10 gap-5 mb-[94px]">
+						<button class="2md:hidden close-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="w-6 h-6">
+								<path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+									d="M6 18 18 6M6 6l12 12" />
+							</svg>
+						</button>
 						<li>
 							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
 						</li>
@@ -165,9 +156,11 @@
 							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
 						</li>
 					</ul>
-					<h1 data-aos="fade-zoom-in" class="hero-title">ФИТНЕС-ЦЕНТР</h1>
-					<h2 data-aos="fade-zoom-in" data-aos-delay="600" class="hero-title__sm">НОВОГО ПОКОЛЕНИЯ</h2>
-					<div data-aos="fade-zoom-in" data-aos-delay="900" class="flex items-center gap-4 sm:mb-[60px] mb-[30px]">
+					<h1 data-aos="fade-zoom-in" class="text-center xsm:text-left hero-title">ФИТНЕС-ЦЕНТР</h1>
+					<h2 data-aos="fade-zoom-in" data-aos-delay="600" class="text-center xsm:text-left hero-title__sm">НОВОГО
+						ПОКОЛЕНИЯ</h2>
+					<div data-aos="fade-zoom-in" data-aos-delay="900"
+						class="flex items-center xsm:justify-normal justify-center gap-4 sm:mb-[60px] mb-[30px]">
 						<a class="social-btn" href="#!">
 							<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
 						</a>
@@ -178,10 +171,12 @@
 							<img src="src/images/icons/whatsapp.svg" alt="whatsapp" width="15" height="15">
 						</a>
 					</div>
-					<a data-aos="zoom-in" data-aos-delay="400"
-						class="bg-red md:rounded-[20px] rounded-lg 2md:py-[27px] 2md:px-[50px] py-[18px] px-[25px] md:py-[20px] md:px-[30px] md:text-[20px] text-white font-medium 2md:text-[25px] hover-btn 2md:leading-[35px] md:leading-8"
-						href="#!">ЗАПИСАТЬСЯ НА
-						ЗАНЯТИЕ</a>
+					<div class="xsm:text-left text-center">
+						<a data-aos="zoom-in" data-aos-delay="400"
+							class="bg-red md:rounded-[20px] rounded-lg 2md:py-[27px] 2md:px-[50px] py-[18px] px-[25px] md:py-[20px] md:px-[30px] md:text-[20px] text-white font-medium 2md:text-[25px] hover-btn 2md:leading-[35px] md:leading-8"
+							href="#!">ЗАПИСАТЬСЯ НА
+							ЗАНЯТИЕ</a>
+					</div>
 				</div>
 			</section>
 
