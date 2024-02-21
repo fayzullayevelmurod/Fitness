@@ -11,19 +11,19 @@ window.addEventListener('DOMContentLoaded', () => {
 		breakpoints: {
 			992: {
 				slidesPerView: 3,
-		spaceBetween: 40,
+				spaceBetween: 40,
 			},
 			768: {
 				slidesPerView: 3,
-		spaceBetween: 20,
+				spaceBetween: 20,
 			},
 			480: {
 				slidesPerView: 2,
-		spaceBetween: 20,
+				spaceBetween: 20,
 			},
 			0: {
 				slidesPerView: 1,
-		spaceBetween: 20,
+				spaceBetween: 20,
 			}
 		}
 	});
@@ -37,7 +37,28 @@ window.addEventListener('DOMContentLoaded', () => {
 		},
 		centeredSlides: true,
 		loop: true,
-		speed: 800
+		speed: 800,
+		breakpoints: {
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 40,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				centeredSlides: false,
+			},
+			570: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+				centeredSlides: false,
+			},
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+				centeredSlides: false,
+			}
+		}
 	});
 
 	// light gallery
