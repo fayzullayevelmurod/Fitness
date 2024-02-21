@@ -29,16 +29,78 @@
 
 		<!-- header -->
 		<header class="header bg-black py-[34px]" id="header">
-			<div class="container flex items-center justify-between">
-				<a class="flex items-center gap-5" href="#!">
+			<div class="container flex gap-5 flex-wrap items-center justify-between">
+				<a class="flex items-center md:gap-5 gap-[10px]" href="#!">
 					<img src="src/images/logo.png" alt="logo" width="60" height="64">
-					<h4 class="header-logo__title font-normal text-2xxl text-white leading-[37px]">
+					<h4 class="header-logo__title font-normal md:text-2xxl text-18px text-white leading-[37px]">
 						Название компании
 						<span class="text-[#FFFFFF99] block text-base font-Jost leading-[23px]">Фитнес-центр</span>
 					</h4>
 				</a>
 
-				<div class="flex items-center gap-10">
+				<div id="menu"
+					class="1md:relative 1md:hidden block absolute 1md:translate-x-0 translate-x-[-100%] top-0 1md:bg-transparent bg-black-50 w-full h-full left-0 1md:p-0 px-10 pt-10 z-10">
+					<button class="1md:hidden absolute top-10 right-10" id="close-button">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+							class="w-6 h-6">
+							<path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+								d="M6 18 18 6M6 6l12 12" />
+						</svg>
+					</button>
+					<ul class="1md:hidden">
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Добро пожаловать</a>
+						</li>
+						<li class="relative dropdown-box">
+							<a class="flex items-center gap-[18px] font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">
+								О компании
+								<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
+							</a>
+							<ul
+								class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[25px] left-0 bg-slate-500 text-white py-[20px] px-[30px] rounded-md w-[150px]">
+								<li>
+									<a href="#!">Value Value</a>
+								</li>
+								<li>
+									<a href="#!">Value</a>
+								</li>
+								<li>
+									<a href="#!">Value</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Новости</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Отзывы о нас</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Контакты</a>
+						</li>
+						<li>
+							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
+						</li>
+					</ul>
+
+					<div class="flex 1md:flex-row flex-col 1md:items-center 1md:gap-10 gap-5 1md:mt-0 mt-5">
+						<div class="flex items-center gap-[12px]">
+							<img src="src/images/icons/location.svg" alt="location" width="13" height="16">
+							<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!"><span
+									class="font-light">Москва</span>,
+								Лубянский проезд, дом</a>
+						</div>
+						<div class="flex items-center gap-[12px]">
+							<img src="src/images/icons/phone.svg" alt="phone" width="14" height="16">
+							<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!">+7 (000)
+								000-00-00</a>
+						</div>
+					</div>
+				</div>
+				<div class="1md:flex hidden 1md:flex-row flex-col 1md:items-center 1md:gap-10 gap-5 1md:mt-0 mt-5">
 					<div class="flex items-center gap-[12px]">
 						<img src="src/images/icons/location.svg" alt="location" width="13" height="16">
 						<a class="font-Jost font-normal text-base text-white leading-[22px]" href="#!"><span
@@ -51,16 +113,21 @@
 							000-00-00</a>
 					</div>
 				</div>
+				<button class="1md:hidden" id="open-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+						class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+					</svg>
+				</button>
 			</div>
 		</header>
 
 		<!-- main -->
 		<main class="main">
-
 			<!-- hero-section -->
-			<section class="bg-hero-bg bg-no-repeat bg-cover pb-[155px] pt-10">
+			<section class="bg-hero-bg bg-no-repeat bg-cover md:pb-[155px] pb-[50px] pt-10">
 				<div class="container">
-					<ul class="flex gap-10 mb-[94px]">
+					<ul class="1md:flex hidden 2md:gap-10 gap-5 mb-[94px] ">
 						<li>
 							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
 						</li>
@@ -98,9 +165,9 @@
 							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
 						</li>
 					</ul>
-					<h1 class="hero-title">ФИТНЕС-ЦЕНТР</h1>
-					<h2 class="hero-title__sm">НОВОГО ПОКОЛЕНИЯ</h2>
-					<div class="flex items-center gap-4 mb-[60px]">
+					<h1 data-aos="fade-zoom-in" class="hero-title">ФИТНЕС-ЦЕНТР</h1>
+					<h2 data-aos="fade-zoom-in" data-aos-delay="600" class="hero-title__sm">НОВОГО ПОКОЛЕНИЯ</h2>
+					<div data-aos="fade-zoom-in" data-aos-delay="900" class="flex items-center gap-4 sm:mb-[60px] mb-[30px]">
 						<a class="social-btn" href="#!">
 							<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
 						</a>
@@ -111,36 +178,41 @@
 							<img src="src/images/icons/whatsapp.svg" alt="whatsapp" width="15" height="15">
 						</a>
 					</div>
-					<a class="bg-red rounded-[20px] py-[27px] px-[50px] text-white font-medium text-[25px] hover-btn leading-[35px]"
+					<a data-aos="zoom-in" data-aos-delay="400"
+						class="bg-red md:rounded-[20px] rounded-lg 2md:py-[27px] 2md:px-[50px] py-[18px] px-[25px] md:py-[20px] md:px-[30px] md:text-[20px] text-white font-medium 2md:text-[25px] hover-btn 2md:leading-[35px] md:leading-8"
 						href="#!">ЗАПИСАТЬСЯ НА
 						ЗАНЯТИЕ</a>
 				</div>
 			</section>
 
 			<!-- services-section -->
-			<section class="services-section pb-[95px] pt-[80px]">
+			<section class="services-section mb:pb-[95px] py-[40px] md:pt-[80px]">
 				<div class="container">
-					<h2 class="title-text__sm">УСЛУГИ</h2>
-					<h1 class="title-text">МЫ ПРЕДЛАГАЕМ</h1>
+					<h2 data-aos="fade-left" data-aos-delay="400" class="title-text__sm">УСЛУГИ</h2>
+					<h1 data-aos="fade-right" data-aos-delay="700" class="title-text">МЫ ПРЕДЛАГАЕМ</h1>
 
-					<div class="swiper services-swiper mt-[50px] pb-[74px]">
+					<div class="swiper services-swiper xsm:mt-[50px] mt-[40px] xsm:pb-[74px] pb-[54px]">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<a class="slide-box" href="#!">
+								<a class="slide-box xsm:w-auto w-full" href="#!">
 									<div
-										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
-										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img1.png"
-											alt="fitnes-img1">
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img
+											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
+											src="src/images/fitnes-img1.png" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
-											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
+											<h4
+												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
+												ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
 										</div>
 										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
-											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+											<img
+												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
 												src="src/images/dumbell.png" alt="boxing">
 										</div>
 									</div>
 
-									<div class="text-center mt-[40px]">
+									<div class="text-center xsm:mt-[40px] mt-[10px]">
 										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
 									</div>
 								</a>
@@ -148,60 +220,73 @@
 							</div>
 
 							<div class="swiper-slide">
-								<a class="slide-box" href="#!">
+								<a class="slide-box xsm:w-auto w-full" href="#!">
 									<div
-										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
-										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img2.png"
-											alt="fitnes-img2">
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img
+											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
+											src="src/images/fitnes-img2.png" alt="fitnes-img2">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
-											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">КАРДИОЗОНА</h4>
+											<h4
+												class="font-1md:semibold text-[3 textxsm:-[20px]0px] text-[25px] leading-[40px] text-white mt-[50px]">
+												КАРДИОЗОНА</h4>
 										</div>
 										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
-											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+											<img
+												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
 												src="src/images/bike.png" alt="bike">
 										</div>
 									</div>
-									<div class="text-center mt-[40px]">
+									<div class="text-center xsm:mt-[40px] mt-[10px]">
 										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
 									</div>
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a class="slide-box" href="#!">
+								<a class="slide-box xsm:w-auto w-full" href="#!">
 									<div
-										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
-										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img3.png"
-											alt="fitnes-img1">
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img
+											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
+											src="src/images/fitnes-img3.png" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
-											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">БОЕВЫЕ ИСКУССТВА</h4>
+											<h4
+												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
+												БОЕВЫЕ
+												ИСКУССТВА</h4>
 										</div>
 										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
-											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+											<img
+												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
 												src="src/images/boxing.png" alt="boxing">
 										</div>
 									</div>
-									<div class="text-center mt-[40px]">
+									<div class="text-center xsm:mt-[40px] mt-[10px]">
 										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
 									</div>
 								</a>
 							</div>
 							<div class="swiper-slide">
-								<a class="slide-box" href="#!">
+								<a class="slide-box xsm:w-auto w-full" href="#!">
 									<div
-										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
-										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img1.png"
-											alt="fitnes-img1">
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img
+											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
+											src="src/images/fitnes-img1.png" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
-											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
+											<h4
+												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
+												ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
 										</div>
 										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
-											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+											<img
+												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
 												src="src/images/dumbell.png" alt="boxing">
 										</div>
 									</div>
 
-									<div class="text-center mt-[40px]">
+									<div class="text-center xsm:mt-[40px] mt-[10px]">
 										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
 									</div>
 								</a>
@@ -209,47 +294,56 @@
 							</div>
 
 							<div class="swiper-slide">
-								<a class="slide-box" href="#!">
+								<a class="slide-box xsm:w-auto w-full" href="#!">
 									<div
-										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
-										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img2.png"
-											alt="fitnes-img2">
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img
+											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
+											src="src/images/fitnes-img2.png" alt="fitnes-img2">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
-											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">КАРДИОЗОНА</h4>
+											<h4
+												class="font-1md:semibold text-[3 textxsm:-[20px]0px] text-[25px] leading-[40px] text-white mt-[50px]">
+												КАРДИОЗОНА</h4>
 										</div>
 										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
-											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+											<img
+												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
 												src="src/images/bike.png" alt="bike">
 										</div>
 									</div>
-									<div class="text-center mt-[40px]">
+									<div class="text-center xsm:mt-[40px] mt-[10px]">
 										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
 									</div>
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a class="slide-box" href="#!">
+								<a class="slide-box xsm:w-auto w-full" href="#!">
 									<div
-										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative h-[450px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
-										<img class="saturate-0 transition-all duration-300 ease-linear" src="src/images/fitnes-img3.png"
-											alt="fitnes-img1">
+										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
+										<img
+											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
+											src="src/images/fitnes-img3.png" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
-											<h4 class="font-semibold text-[30px] leading-[40px] text-white mt-[50px]">БОЕВЫЕ ИСКУССТВА</h4>
+											<h4
+												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
+												БОЕВЫЕ
+												ИСКУССТВА</h4>
 										</div>
 										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
-											<img class="my-auto transition-all duration-200 ease-linear fitness-equipment"
+											<img
+												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
 												src="src/images/boxing.png" alt="boxing">
 										</div>
 									</div>
-									<div class="text-center mt-[40px]">
+									<div class="text-center xsm:mt-[40px] mt-[10px]">
 										<a class="btn" href="#!">ЗАПИСАТЬСЯ</a>
 									</div>
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="flex gap-5">
+					<div class="flex gap-5 xsm:justify-start justify-center">
 						<div class="swiper-button__prev swiper-button">
 							<svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M15.6024 30.48L0.397644 15.2752L15.6024 0.47998L5.80609 15.48L15.6024 30.48Z" fill="white" />
@@ -269,13 +363,15 @@
 			<!-- about-us sectioin -->
 			<section class="about-us">
 				<div class="container">
-					<div class="flex justify-between items-center pb-[80px]">
-						<div>
+					<div class="flex justify-between gap-[66px] items-center pb-[80px]">
+						<div class="2md:max-w-[50%]">
 							<div class="title-box max-w-[752px]">
 								<h1>ГЛАВНАЯ</h1>
-								<h2>О НАС</h2>
+								<h2 data-aos="fade-up">О НАС</h2>
 							</div>
-							<p class="font-Jost text-lg leading-[26px] mt-[50px] mb-[20px]">Сегодня спорт и спортивный образ жизни
+							<p class="font-Jost xsm:text-lg text-base leading-[26px] xsm:mt-[50px] mt-[15px] mb-[20px]">Сегодня спорт
+								и спортивный
+								образ жизни
 								стал
 								неотъемлемой частью многих из нас.
 								И
@@ -284,33 +380,42 @@
 								специалисты, за плечами которых и спортивный и тренерский опыт. При посещении нашего
 								фитнес зала, персональный инструктор разработает план индивидуальных занятий,
 								соответствующий Вашей физической подготовке, достигаемым целям и предпочтениям.</p>
-							<a class="text-[25px] leading-[35px] relative before:absolute before:bottom-[-2px] before:left-0 before:content-[''] before:w-full before:h-[1px] before:bg-red before:transition-all before:duration-300 hover:text-red hover:before:w-0"
-								href="#!">Подробнее</a>
+							<div class="xsm:text-left text-center">
+								<a class="xsm:text-[20px] xsm:text-left text-center xsm:leading-[35px] leading-[30px] relative before:absolute before:bottom-[-2px] before:left-0 before:content-[''] before:w-full before:h-[1px] before:bg-red before:transition-all before:duration-300 hover:text-red hover:before:w-0"
+									href="#!">Подробнее</a>
+							</div>
 						</div>
-						<img class="rounded-[20px] shadow-[9px_18px_20px_0px_#0000004D]" src="src/images/fitnes-img4.png" alt="">
+						<div class="2md:block hidden">
+							<img class="rounded-[20px] max-w-[780px] w-full h-[400px] shadow-[9px_18px_20px_0px_#0000004D]"
+								src="src/images/fitnes-img4.png" alt="">
+						</div>
 					</div>
 
-					<div class="flex items-center justify-between">
-						<div class="flex items-center gap-[29px]">
-							<h3 class="text-red text-[77px] leading-[98px] font-normal">14</h3>
+					<div class="grid 2md:grid-cols-4 md:grid-cols-2 gap-5 items-center">
+						<div class="flex items-center xsm:flex-row flex-col xl:gap-[29px] gap-[10px]">
+							<h3 data-aos="zoom-in"
+								class="text-red xl:text-[77px] lg:text-[45px] 2md:text-[35px] text-[50px] leading-[50px] xl:leading-[98px] lg:leading-[55px] font-normal">
+								14</h3>
 							<p class="font-Jost text-lg text-white">Лет опыт работы</p>
 						</div>
-						<div class="flex items-center gap-[29px]">
-							<h3 class="text-red text-[77px] leading-[98px] font-normal">34+</h3>
+						<div class="flex items-center xsm:flex-row flex-col xl:gap-[29px] gap-[10px]">
+							<h3 data-aos="zoom-in"
+								class="text-red xl:text-[77px] lg:text-[45px] 2md:text-[35px] text-[50px] leading-[50px] xl:leading-[98px] lg:leading-[55px] font-normal">
+								34+</h3>
 							<p class="font-Jost text-lg text-white">Современных тренажёров</p>
 						</div>
-						<div class="flex items-center gap-[29px]">
-							<h3 class="text-red text-[77px] leading-[98px] font-normal">14</h3>
-							<p class="font-Jost text-lg text-white max-w-[187px]">Лет опыт работы</p>
-						</div>
-						<div class="flex items-center gap-[29px]">
-							<h3 class="text-red text-[77px] leading-[98px] font-normal">400</h3>
-							<p class="font-Jost text-lg text-white max-w-[187px]">Довольных клиентов за
+						<div class="flex items-center xsm:flex-row flex-col xl:gap-[29px] gap-[10px]">
+							<h3 data-aos="zoom-in"
+								class="text-red xl:text-[77px] lg:text-[45px] 2md:text-[35px] text-[50px] leading-[50px] xl:leading-[98px] lg:leading-[55px] font-normal">
+								400</h3>
+							<p class="font-Jost text-lg text-white 2md:max-w-[187px]">Довольных клиентов за
 								месяц</p>
 						</div>
-						<div class="flex items-center gap-[29px]">
-							<h3 class="text-red text-[77px] leading-[98px] font-normal">15%</h3>
-							<p class="font-Jost text-lg text-white max-w-[187px]">Скидка постоянным клиентам</p>
+						<div class="flex items-center xsm:flex-row flex-col xl:gap-[29px] gap-[10px]">
+							<h3 data-aos="zoom-in"
+								class="text-red xl:text-[77px] lg:text-[45px] 2md:text-[35px] text-[50px] leading-[50px] xl:leading-[98px] lg:leading-[55px] font-normal">
+								15%</h3>
+							<p class="font-Jost text-lg text-white 2md:max-w-[187px]">Скидка постоянным клиентам</p>
 						</div>
 
 					</div>
@@ -320,18 +425,22 @@
 			<!-- our instructors -->
 			<section class="our-instructors pt-[80px] pb-[110px]">
 				<div class="container">
-					<h2 class="title-text__sm">ТРЕНЕРЫ</h2>
-					<h1 class="title-text">НАШИ ИНСТРУКТОРЫ</h1>
+					<h2 data-aos="fade-left" class="title-text__sm">ТРЕНЕРЫ</h2>
+					<h1 data-aos="fade-right" class="title-text">НАШИ ИНСТРУКТОРЫ</h1>
 
-					<div class="flex flex-wrap justify-between gap-y-[59px] mt-[70px]">
-						<div class="max-w-[770px] w-full bg-[#18191d] flex items-center gap-10 rounded-[20px] overflow-hidden">
-							<img src="src/images/person-1.png" alt="">
-							<div
-								class="relative before:content-[''] before:absolute before:top-[-20px] before:bg-red before:w-[100px] before:h-[2px]">
-								<h3 class="font-semibold text-[25px] leading-[35px] text-white">Николай Алексеев</h3>
+					<div class="grid 2md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-[59px] mt-[70px]">
+						<div data-aos="zoom-in"
+							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
+							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
+								<img class="w-full h-full object-cover" src="src/images/person-1.png" alt="">
+							</div>
+							<div class="md:p-10 p-5">
+								<h3
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									Николай Алексеев</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Персональный тренер</p>
 
-								<div class="flex items-center gap-4 mt-[20px] mb-[40px]">
+								<div class="flex items-center xsm:justify-normal justify-center gap-4 mt-[20px] mb-[40px]">
 									<a class="social-btn" href="#!">
 										<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
 									</a>
@@ -347,14 +456,18 @@
 							</div>
 						</div>
 
-						<div class="max-w-[770px] w-full bg-[#18191d] flex items-center gap-10 rounded-[20px] overflow-hidden">
-							<img src="src/images/person-2.png" alt="">
-							<div
-								class="relative before:content-[''] before:absolute before:top-[-20px] before:bg-red before:w-[100px] before:h-[2px]">
-								<h3 class="font-semibold text-[25px] leading-[35px] text-white">Светлана Иванова</h3>
+						<div data-aos="zoom-in"
+							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
+							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
+								<img class="w-full h-full object-cover" src="src/images/person-2.png" alt="">
+							</div>
+							<div class="md:p-10 p-5">
+								<h3
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									Светлана Иванова</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Инструктор по йоге</p>
 
-								<div class="flex items-center gap-4 mt-[20px] mb-[40px]">
+								<div class="flex items-center xsm:justify-normal justify-center gap-4 mt-[20px] mb-[40px]">
 									<a class="social-btn" href="#!">
 										<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
 									</a>
@@ -370,14 +483,18 @@
 							</div>
 						</div>
 
-						<div class="max-w-[770px] w-full bg-[#18191d] flex items-center gap-10 rounded-[20px] overflow-hidden">
-							<img src="src/images/person-3.png" alt="">
-							<div
-								class="relative before:content-[''] before:absolute before:top-[-20px] before:bg-red before:w-[100px] before:h-[2px]">
-								<h3 class="font-semibold text-[25px] leading-[35px] text-white">Александр Григорьев</h3>
+						<div data-aos="zoom-in"
+							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
+							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
+								<img class="w-full h-full object-cover" src="src/images/person-3.png" alt="">
+							</div>
+							<div class="md:p-10 p-5">
+								<h3
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									Александр Григорьев</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Тренер по плаванию</p>
 
-								<div class="flex items-center gap-4 mt-[20px] mb-[40px]">
+								<div class="flex items-center xsm:justify-normal justify-center gap-4 mt-[20px] mb-[40px]">
 									<a class="social-btn" href="#!">
 										<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
 									</a>
@@ -393,14 +510,18 @@
 							</div>
 						</div>
 
-						<div class="max-w-[770px] w-full bg-[#18191d] flex items-center gap-10 rounded-[20px] overflow-hidden">
-							<img src="src/images/person-4.png" alt="">
-							<div
-								class="relative before:content-[''] before:absolute before:top-[-20px] before:bg-red before:w-[100px] before:h-[2px]">
-								<h3 class="font-semibold text-[25px] leading-[35px] text-white">Евгения Степанова</h3>
+						<div data-aos="zoom-in"
+							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
+							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
+								<img class="w-full h-full object-cover" src="src/images/person-4.png" alt="">
+							</div>
+							<div class="md:p-10 p-5">
+								<h3
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									Евгения Степанова</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Персональный тренер</p>
 
-								<div class="flex items-center gap-4 mt-[20px] mb-[40px]">
+								<div class="flex items-center xsm:justify-normal justify-center gap-4 mt-[20px] mb-[40px]">
 									<a class="social-btn" href="#!">
 										<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
 									</a>
@@ -424,7 +545,7 @@
 				<div class="container">
 					<div class="title-box">
 						<h1>ТАРИФЫ</h1>
-						<h2>ВЫБЕРИТЕ ТАРИФ</h2>
+						<h2 data-aos="fade-up" data-aos-duration="5000">ВЫБЕРИТЕ ТАРИФ</h2>
 					</div>
 
 					<div class="flex justify-between mt-[50px]">
@@ -477,8 +598,8 @@
 			<!-- comments-sectioin -->
 			<section class="comments-sectioin">
 				<div class="container">
-					<h2 class="title-text__sm">ОТЗЫВЫ</h2>
-					<h1 class="title-text">ЧТО ГОВОРЯТ КЛИЕНТЫ</h1>
+					<h2 data-aos="fade-left" data-aos-duration="5000" class="title-text__sm">ОТЗЫВЫ</h2>
+					<h1 data-aos="fade-right" data-aos-duration="5000" class="title-text">ЧТО ГОВОРЯТ КЛИЕНТЫ</h1>
 
 					<div class="swiper comments-swiper mt-[60px]">
 						<div class="swiper-wrapper">
@@ -609,7 +730,7 @@
 				<div class="container">
 					<div class="title-box">
 						<h1>ГАЛЕРЕЯ</h1>
-						<h3 class="title-text">АТМОСФЕРА НАШЕГО ЦЕНТРА</h3>
+						<h3 data-aos="fade-up" data-aos-duration="5000" class="title-text">АТМОСФЕРА НАШЕГО ЦЕНТРА</h3>
 					</div>
 
 					<div class="lightgallery gap-[40px] flex flex-wrap mt-[70px]">
@@ -700,8 +821,8 @@
 			<!-- contact section -->
 			<section class="contact-section pt-[80px]">
 				<div class="container mb-[105px]">
-					<h2 class="title-text__sm">КОНТАКТЫ</h2>
-					<h1 class="title-text">СВЯЖИТЕСЬ С НАМИ</h1>
+					<h2 data-aos="fade-left" data-aos-duration="5000" class="title-text__sm">КОНТАКТЫ</h2>
+					<h1 data-aos="fade-right" data-aos-duration="5000" class="title-text">СВЯЖИТЕСЬ С НАМИ</h1>
 					<div class="flex items-center gap-4 py-[50px]">
 						<a class="social-btn" href="#!">
 							<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">

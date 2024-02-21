@@ -22,6 +22,11 @@ module.exports = {
 				"services-bg": "url('../images/services-section-bg.png')",
 				"hero-bg": "url('../images/banner.png')",
 				"patter": "url('../images/pattern-bg.webp')",
+			},
+			screens: {
+				"1md": "800px",
+				"2md": "992px",
+				"xsm": "480px"
 			}
 		},
 	},
