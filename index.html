@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -32,7 +32,7 @@
 			<div class="container flex 2md:flex-row flex-col gap-5 flex-wrap 2md:items-center justify-between">
 				<a class="flex items-center justify-normal xsm:flex-row xsm:mt-0 mt-[26px] flex-col xsm:text-left text-center md:gap-5 gap-[10px]"
 					href="#!">
-					<img src="src/images/logo.png" alt="logo" width="60" height="64">
+					<img src="src/images/logo.webp" alt="logo" width="60" height="64">
 					<h4 class="header-logo__title font-normal text-2xxl  text-white leading-[37px]">
 						Название компании
 						<span
@@ -62,54 +62,57 @@
 		<!-- main -->
 		<main class="main">
 			<!-- hero-section -->
-			<section class="bg-hero-bg hero-bg bg-no-repeat bg-cover md:pb-[155px] pb-[50px] pt-10">
+			<section class="hero-bg md:pb-[155px] pb-[50px] pt-10">
 				<div class="container">
 					<div class="menu active-menu fixed 2md:hidden">
-						<ul class="2md:flex 2md:relative 2md:gap-10 gap-5 mb-[94px]">
-							<button class="2md:hidden close-btn">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-									stroke="currentColor" class="w-6 h-6">
-									<path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
-										d="M6 18 18 6M6 6l12 12" />
-								</svg>
-							</button>
-							<li>
-								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
-							</li>
-							<li>
-								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Добро пожаловать</a>
-							</li>
-							<li class="relative dropdown-box">
-								<a class="flex items-center gap-[18px] font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">
-									О компании
-									<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
-								</a>
-								<ul
-									class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[55px] left-0 bg-[#18191d] text-white py-[20px] px-[30px] rounded-md w-[100%]">
-									<li>
-										<a href="#!">Value Value</a>
-									</li>
-									<li>
-										<a href="#!">Value</a>
-									</li>
-									<li>
-										<a href="#!">Value</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Новости</a>
-							</li>
-							<li>
-								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Отзывы о нас</a>
-							</li>
-							<li>
-								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Контакты</a>
-							</li>
-							<li>
-								<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
-							</li>
-						</ul>
+						<div class="menu-small">
+							<ul class="2md:flex 2md:relative 2md:gap-10 gap-5 mb-[94px]">
+								<button class="2md:hidden close-btn" aria-label="close-btn">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+										stroke="currentColor" class="w-6 h-6">
+										<path fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+											d="M6 18 18 6M6 6l12 12" />
+									</svg>
+								</button>
+								<li>
+									<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Главная</a>
+								</li>
+								<li>
+									<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Добро пожаловать</a>
+								</li>
+								<li class="relative dropdown-box">
+									<a class="flex items-center gap-[18px] font-Jost text-[#FFFFFFB2] hover:text-white leading-7"
+										href="#!">
+										О компании
+										<img src="src/images/icons/arrow-down.svg" alt="arrow-down" width="8" height="4">
+									</a>
+									<ul
+										class="dropdown absolute transition-all origin-top z-10 duration-300 space-y-2 scale-y-0 overflow-hidden top-[55px] left-0 bg-[#18191d] text-white py-[20px] px-[30px] rounded-md w-[100%]">
+										<li>
+											<a href="#!">Value Value</a>
+										</li>
+										<li>
+											<a href="#!">Value</a>
+										</li>
+										<li>
+											<a href="#!">Value</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Новости</a>
+								</li>
+								<li>
+									<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Отзывы о нас</a>
+								</li>
+								<li>
+									<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Контакты</a>
+								</li>
+								<li>
+									<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<ul class="2md:flex hidden 2md:gap-10 gap-5 mb-[94px]">
 						<button class="2md:hidden close-btn">
@@ -156,9 +159,9 @@
 							<a class="font-Jost text-[#FFFFFFB2] hover:text-white leading-7" href="#!">Регистрация</a>
 						</li>
 					</ul>
-					<h1 data-aos="fade-zoom-in" class="text-center xsm:text-left hero-title">ФИТНЕС-ЦЕНТР</h1>
-					<h2 data-aos="fade-zoom-in" data-aos-delay="600" class="text-center xsm:text-left hero-title__sm">НОВОГО
-						ПОКОЛЕНИЯ</h2>
+					<h3 data-aos="fade-zoom-in" class="text-center xsm:text-left hero-title">ФИТНЕС-ЦЕНТР</h3>
+					<h4 data-aos="fade-zoom-in" data-aos-delay="600" class="text-center xsm:text-left hero-title__sm">НОВОГО
+						ПОКОЛЕНИЯ</h4>
 					<div data-aos="fade-zoom-in" data-aos-delay="900"
 						class="flex items-center xsm:justify-normal justify-center gap-4 sm:mb-[60px] mb-[30px]">
 						<a class="social-btn" href="#!">
@@ -183,8 +186,8 @@
 			<!-- services-section -->
 			<section class="services-section mb:pb-[95px] py-[40px] md:pt-[80px]">
 				<div class="container">
-					<h2 data-aos="fade-left" data-aos-delay="400" class="title-text__sm">УСЛУГИ</h2>
-					<h1 data-aos="fade-right" data-aos-delay="700" class="title-text">МЫ ПРЕДЛАГАЕМ</h1>
+					<h5 data-aos="fade-left" data-aos-delay="400" class="title-text__sm">УСЛУГИ</h5>
+					<h3 data-aos="fade-right" data-aos-delay="700" class="title-text">МЫ ПРЕДЛАГАЕМ</h3>
 
 					<div class="swiper services-swiper xsm:mt-[50px] mt-[40px] xsm:pb-[74px] pb-[54px]">
 						<div class="swiper-wrapper">
@@ -194,16 +197,16 @@
 										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
 										<img
 											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
-											src="src/images/fitnes-img1.png" alt="fitnes-img1">
+											src="src/images/fitnes-img1.webp" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
 											<h4
 												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
 												ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
 										</div>
-										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+										<div class="absolute top-1/2 left-1/2 translate-x-[-50%] z-20 translate-y-[-50%]">
 											<img
 												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
-												src="src/images/dumbell.png" alt="boxing">
+												src="src/images/dumbell.webp" alt="boxing">
 										</div>
 									</div>
 
@@ -220,16 +223,16 @@
 										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
 										<img
 											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
-											src="src/images/fitnes-img2.png" alt="fitnes-img2">
+											src="src/images/fitnes-img2.webp" alt="fitnes-img2">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
 											<h4
 												class="font-1md:semibold text-[3 textxsm:-[20px]0px] text-[25px] leading-[40px] text-white mt-[50px]">
 												КАРДИОЗОНА</h4>
 										</div>
-										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+										<div class="absolute top-1/2 left-1/2 translate-x-[-50%] z-20 translate-y-[-50%]">
 											<img
 												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
-												src="src/images/bike.png" alt="bike">
+												src="src/images/bike.webp" alt="bike">
 										</div>
 									</div>
 									<div class="text-center xsm:mt-[40px] mt-[10px]">
@@ -244,17 +247,17 @@
 										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
 										<img
 											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
-											src="src/images/fitnes-img3.png" alt="fitnes-img1">
+											src="src/images/fitnes-img3.webp" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
 											<h4
 												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
 												БОЕВЫЕ
 												ИСКУССТВА</h4>
 										</div>
-										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+										<div class="absolute top-1/2 left-1/2 translate-x-[-50%] z-20 translate-y-[-50%]">
 											<img
 												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
-												src="src/images/boxing.png" alt="boxing">
+												src="src/images/boxing.webp" alt="boxing">
 										</div>
 									</div>
 									<div class="text-center xsm:mt-[40px] mt-[10px]">
@@ -268,16 +271,16 @@
 										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
 										<img
 											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
-											src="src/images/fitnes-img1.png" alt="fitnes-img1">
+											src="src/images/fitnes-img1.webp" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
 											<h4
 												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
 												ТРЕНАЖЕРНЫЙ ЗАЛ</h4>
 										</div>
-										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+										<div class="absolute top-1/2 left-1/2 translate-x-[-50%] z-20 translate-y-[-50%]">
 											<img
 												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
-												src="src/images/dumbell.png" alt="boxing">
+												src="src/images/dumbell.webp" alt="boxing">
 										</div>
 									</div>
 
@@ -294,16 +297,16 @@
 										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
 										<img
 											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
-											src="src/images/fitnes-img2.png" alt="fitnes-img2">
+											src="src/images/fitnes-img2.webp" alt="fitnes-img2">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
 											<h4
 												class="font-1md:semibold text-[3 textxsm:-[20px]0px] text-[25px] leading-[40px] text-white mt-[50px]">
 												КАРДИОЗОНА</h4>
 										</div>
-										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+										<div class="absolute top-1/2 left-1/2 translate-x-[-50%] z-20 translate-y-[-50%]">
 											<img
 												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
-												src="src/images/bike.png" alt="bike">
+												src="src/images/bike.webp" alt="bike">
 										</div>
 									</div>
 									<div class="text-center xsm:mt-[40px] mt-[10px]">
@@ -318,17 +321,17 @@
 										class="slide-box__content transition-all duration-300 ease-linear before:transition-all before:duration-300 before:ease-linear relative lg:h-[450px] xsm:h-[350px] h-[250px] rounded-[20px] overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black-60 before:z-10">
 										<img
 											class="saturate-0 transition-all duration-300 ease-linear xsm:w-auto w-full xsm:h-full object-cover"
-											src="src/images/fitnes-img3.png" alt="fitnes-img1">
+											src="src/images/fitnes-img3.webp" alt="fitnes-img1">
 										<div class="absolute top-0 left-0 text-center w-full h-full z-20">
 											<h4
 												class="font-semibold 1md:text-[30px] xsm:text-[20px] text-[25px] leading-[40px] text-white mt-[50px]">
 												БОЕВЫЕ
 												ИСКУССТВА</h4>
 										</div>
-										<div class="absolute top-[50%] left-[50%] translate-x-[-50%] z-20 translate-y-[-50%]">
+										<div class="absolute top-1/2 left-1/2 translate-x-[-50%] z-20 translate-y-[-50%]">
 											<img
 												class="my-auto transition-all duration-200 ease-linear fitness-equipment 2md:w-auto 2md:h-auto w-[60px] h-[60px]"
-												src="src/images/boxing.png" alt="boxing">
+												src="src/images/boxing.webp" alt="boxing">
 										</div>
 									</div>
 									<div class="text-center xsm:mt-[40px] mt-[10px]">
@@ -359,10 +362,10 @@
 			<section class="about-us">
 				<div class="container">
 					<div class="flex justify-between gap-[66px] items-center pb-[80px]">
-						<div class="2md:max-w-[50%]">
+						<div class="2md:max-w-1/2">
 							<div class="title-box max-w-[752px]">
-								<h1>ГЛАВНАЯ</h1>
-								<h2 data-aos="fade-up">О НАС</h2>
+								<h3>ГЛАВНАЯ</h3>
+								<h5 data-aos="fade-up">О НАС</h5>
 							</div>
 							<p class="font-Jost xsm:text-lg text-base leading-[26px] xsm:mt-[50px] mt-[15px] mb-[20px]">Сегодня спорт
 								и спортивный
@@ -381,8 +384,8 @@
 							</div>
 						</div>
 						<div class="2md:block hidden">
-							<img class="rounded-[20px] max-w-[780px] w-full h-[400px] shadow-[9px_18px_20px_0px_#0000004D]"
-								src="src/images/fitnes-img4.png" alt="">
+							<img class="about-us__img rounded-[20px] max-w-[780px] h-[400px] shadow-[9px_18px_20px_0px_#0000004D]"
+								src="src/images/fitnes-img4.webp" alt="">
 						</div>
 					</div>
 
@@ -420,18 +423,18 @@
 			<!-- our instructors -->
 			<section class="our-instructors pt-[80px] pb-[110px]">
 				<div class="container">
-					<h2 data-aos="fade-left" class="title-text__sm">ТРЕНЕРЫ</h2>
-					<h1 data-aos="fade-right" class="title-text">НАШИ ИНСТРУКТОРЫ</h1>
+					<h5 data-aos="fade-left" class="title-text__sm">ТРЕНЕРЫ</h5>
+					<h3 data-aos="fade-right" class="title-text">НАШИ ИНСТРУКТОРЫ</h3>
 
 					<div class="grid 2md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-[59px] mt-[70px]">
 						<div data-aos="zoom-in"
 							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
 							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
-								<img class="w-full h-full object-cover" src="src/images/person-1.png" alt="">
+								<img class="w-full h-full object-cover" src="src/images/person-1.webp" alt="">
 							</div>
 							<div class="md:p-10 p-5">
 								<h3
-									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-1/2 xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
 									Николай Алексеев</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Персональный тренер</p>
 
@@ -454,11 +457,11 @@
 						<div data-aos="zoom-in"
 							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
 							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
-								<img class="w-full h-full object-cover" src="src/images/person-2.png" alt="">
+								<img class="w-full h-full object-cover" src="src/images/person-2.webp" alt="">
 							</div>
 							<div class="md:p-10 p-5">
 								<h3
-									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-1/2 xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
 									Светлана Иванова</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Инструктор по йоге</p>
 
@@ -481,11 +484,11 @@
 						<div data-aos="zoom-in"
 							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
 							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
-								<img class="w-full h-full object-cover" src="src/images/person-3.png" alt="">
+								<img class="w-full h-full object-cover" src="src/images/person-3.webp" alt="">
 							</div>
 							<div class="md:p-10 p-5">
 								<h3
-									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-1/2 xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
 									Александр Григорьев</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Тренер по плаванию</p>
 
@@ -508,11 +511,11 @@
 						<div data-aos="zoom-in"
 							class="2md:max-w-[770px]  w-full bg-[#18191d] flex flex-col text-center xsm:text-left xsm:flex-row items-center rounded-[20px] overflow-hidden">
 							<div class="xsm:max-w-[346px] w-full xsm:h-[350px] h-[250px] xsm:mb-0 mb-[30px]">
-								<img class="w-full h-full object-cover" src="src/images/person-4.png" alt="">
+								<img class="w-full h-full object-cover" src="src/images/person-4.webp" alt="">
 							</div>
 							<div class="md:p-10 p-5">
 								<h3
-									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-[50%] xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
+									class="font-semibold before:content-[''] before:absolute before:top-[-20px] xsm:before:left-0 before:left-1/2 xsm:before:translate-x-0 before:translate-x-[-50%] before:bg-red before:w-[100px] before:h-[2px] relative text-[25px] leading-[35px] text-white">
 									Евгения Степанова</h3>
 								<p class="text-base leading-[26px] text-[#FFFFFFCC]">Персональный тренер</p>
 
@@ -539,8 +542,8 @@
 			<section class="rates-section">
 				<div class="container">
 					<div class="title-box">
-						<h1>ТАРИФЫ</h1>
-						<h2 data-aos="fade-up" data-aos-duration="5000">ВЫБЕРИТЕ ТАРИФ</h2>
+						<h3>ТАРИФЫ</h3>
+						<h5 data-aos="fade-up" data-aos-duration="5000">ВЫБЕРИТЕ ТАРИФ</h5>
 					</div>
 
 					<div class="flex justify-between sm:mt-[50px] mt-[23px] gap-5">
@@ -591,9 +594,9 @@
 						</div>
 						<div class="space-y-[30px] 2md:block hidden">
 							<img class="rounded-[20px] shadow-[9px_18px_20px_0px_#0000004D] h-[250px] object-cover"
-								src="src/images/fitnes-img5.png" alt="">
+								src="src/images/fitnes-img5.webp" alt="">
 							<img class="rounded-[20px] h-[397px] w-[553px] object-cover shadow-[9px_18px_20px_0px_#0000004D]"
-								src="src/images/fitnes-img6.png" alt="">
+								src="src/images/fitnes-img6.webp" alt="">
 						</div>
 					</div>
 				</div>
@@ -602,8 +605,8 @@
 			<!-- comments-sectioin -->
 			<section class="comments-sectioin">
 				<div class="container">
-					<h2 data-aos="fade-left" data-aos-duration="5000" class="title-text__sm">ОТЗЫВЫ</h2>
-					<h1 data-aos="fade-right" data-aos-duration="5000" class="title-text">ЧТО ГОВОРЯТ КЛИЕНТЫ</h1>
+					<h5 data-aos="fade-left" data-aos-duration="5000" class="title-text__sm">ОТЗЫВЫ</h5>
+					<h3 data-aos="fade-right" data-aos-duration="5000" class="title-text">ЧТО ГОВОРЯТ КЛИЕНТЫ</h3>
 
 					<div class="swiper comments-swiper mt-[60px]">
 						<div class="swiper-wrapper">
@@ -618,7 +621,7 @@
 										самое главное - опытные инструкторы. Спасибо вам!</p>
 								</div>
 								<div class="flex items-center gap-[20px] mt-[25px]">
-									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-5.png"
+									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-5.webp"
 										alt="">
 									<div>
 										<h4 class="font-normal xsm:text-[25px] text-[20px] leading-[30px]  xsm:leading-[35px] text-white">
@@ -640,7 +643,7 @@
 										самое главное - опытные инструкторы. Спасибо вам!</p>
 								</div>
 								<div class="flex items-center gap-[20px] mt-[25px]">
-									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-6.png"
+									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-6.webp"
 										alt="">
 									<div>
 										<h4 class="font-normal xsm:text-[25px] text-[20px] leading-[30px]  xsm:leading-[35px] text-white">
@@ -662,7 +665,7 @@
 										самое главное - опытные инструкторы. Спасибо вам!</p>
 								</div>
 								<div class="flex items-center gap-[20px] mt-[25px]">
-									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-7.png"
+									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-7.webp"
 										alt="">
 									<div>
 										<h4 class="font-normal xsm:text-[25px] text-[20px] leading-[30px]  xsm:leading-[35px] text-white">
@@ -684,7 +687,7 @@
 										самое главное - опытные инструкторы. Спасибо вам!</p>
 								</div>
 								<div class="flex items-center gap-[20px] mt-[25px]">
-									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-5.png"
+									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-5.webp"
 										alt="">
 									<div>
 										<h4 class="font-normal xsm:text-[25px] text-[20px] leading-[30px]  xsm:leading-[35px] text-white">
@@ -706,7 +709,7 @@
 										самое главное - опытные инструкторы. Спасибо вам!</p>
 								</div>
 								<div class="flex items-center gap-[20px] mt-[25px]">
-									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-6.png"
+									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-6.webp"
 										alt="">
 									<div>
 										<h4 class="font-normal xsm:text-[25px] text-[20px] leading-[30px]  xsm:leading-[35px] text-white">
@@ -728,7 +731,7 @@
 										самое главное - опытные инструкторы. Спасибо вам!</p>
 								</div>
 								<div class="flex items-center gap-[20px] mt-[25px]">
-									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-7.png"
+									<img class="rounded-full xsm:w-[100px] xsm:h-[100px] w-[80px] h-[80px]" src="src/images/person-7.webp"
 										alt="">
 									<div>
 										<h4 class="font-normal xsm:text-[25px] text-[20px] leading-[30px]  xsm:leading-[35px] text-white">
@@ -763,43 +766,43 @@
 			<section class="gallery-section">
 				<div class="container">
 					<div class="title-box">
-						<h1>ГАЛЕРЕЯ</h1>
-						<h3 data-aos="fade-up" data-aos-duration="5000" class="title-text">АТМОСФЕРА НАШЕГО ЦЕНТРА</h3>
+						<h3>ГАЛЕРЕЯ</h3>
+						<h5 data-aos="fade-up" data-aos-duration="5000" class="title-text">АТМОСФЕРА НАШЕГО ЦЕНТРА</h5>
 					</div>
 
 					<div class="lightgallery gap-[40px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-[70px]">
-						<a class="relative" href="src/images/gallery-img-1.png">
-							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-1.png" alt="">
+						<a class="relative" href="src/images/gallery-img-1.webp">
+							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-1.webp" alt="">
 							<div class="absolute bottom-[20px] right-[20px] hover:scale-125">
 								<img src="src/images/icons/scale-icon.svg" alt="" width="25" height="25">
 							</div>
 						</a>
-						<a class="relative" href="src/images/gallery-img-2.png">
-							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-2.png" alt="">
+						<a class="relative" href="src/images/gallery-img-2.webp">
+							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-2.webp" alt="">
 							<div class="absolute bottom-[20px] right-[20px] hover:scale-125">
 								<img src="src/images/icons/scale-icon.svg" alt="" width="25" height="25">
 							</div>
 						</a>
-						<a class="relative" href="src/images/gallery-img-3.png">
-							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-3.png" alt="">
+						<a class="relative" href="src/images/gallery-img-3.webp">
+							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-3.webp" alt="">
 							<div class="absolute bottom-[20px] right-[20px] hover:scale-125">
 								<img src="src/images/icons/scale-icon.svg" alt="" width="25" height="25">
 							</div>
 						</a>
-						<a class="relative" href="src/images/gallery-img-4.png">
-							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-4.png" alt="">
+						<a class="relative" href="src/images/gallery-img-4.webp">
+							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-4.webp" alt="">
 							<div class="absolute bottom-[20px] right-[20px] hover:scale-125">
 								<img src="src/images/icons/scale-icon.svg" alt="" width="25" height="25">
 							</div>
 						</a>
-						<a class="relative" href="src/images/gallery-img-5.png">
-							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-5.png" alt="">
+						<a class="relative" href="src/images/gallery-img-5.webp">
+							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-5.webp" alt="">
 							<div class="absolute bottom-[20px] right-[20px] hover:scale-125">
 								<img src="src/images/icons/scale-icon.svg" alt="" width="25" height="25">
 							</div>
 						</a>
-						<a class="relative" href="src/images/gallery-img-6.png">
-							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-6.png" alt="">
+						<a class="relative" href="src/images/gallery-img-6.webp">
+							<img class="rounded-[20px] 2md:max-w-[506px] w-full" src="src/images/gallery-img-6.webp" alt="">
 							<div class="absolute bottom-[20px] right-[20px] hover:scale-125">
 								<img src="src/images/icons/scale-icon.svg" alt="" width="25" height="25">
 							</div>
@@ -816,38 +819,38 @@
 			<section class="bg-[#18191d] md:py-[100px] py-[50px]">
 				<div class="container overflow-hidden">
 					<div class="flex items-center justify-between animation-box">
-						<div class="flex items-center justify-between w-[50%]">
+						<div class="flex items-center justify-between w-1/2">
 							<div>
-								<img src="src/images/logo-1.png" alt="">
+								<img src="src/images/logo-1.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-2.png" alt="">
+								<img src="src/images/logo-2.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-3.png" alt="">
+								<img src="src/images/logo-3.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-4.png" alt="">
+								<img src="src/images/logo-4.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-5.png" alt="">
+								<img src="src/images/logo-5.webp" alt="">
 							</div>
 						</div>
-						<div class="flex items-center justify-between w-[50%]">
+						<div class="flex items-center justify-between w-1/2">
 							<div>
-								<img src="src/images/logo-1.png" alt="">
+								<img src="src/images/logo-1.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-2.png" alt="">
+								<img src="src/images/logo-2.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-3.png" alt="">
+								<img src="src/images/logo-3.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-4.png" alt="">
+								<img src="src/images/logo-4.webp" alt="">
 							</div>
 							<div>
-								<img src="src/images/logo-5.png" alt="">
+								<img src="src/images/logo-5.webp" alt="">
 							</div>
 						</div>
 					</div>
@@ -857,8 +860,8 @@
 			<!-- contact section -->
 			<section class="contact-section md:pt-[80px] pt-[40px]">
 				<div class="container md:mb-[105px] mb-[40px]">
-					<h2 data-aos="fade-left" data-aos-duration="5000" class="title-text__sm">КОНТАКТЫ</h2>
-					<h1 data-aos="fade-right" data-aos-duration="5000" class="title-text">СВЯЖИТЕСЬ С НАМИ</h1>
+					<h5 data-aos="fade-left" data-aos-duration="5000" class="title-text__sm">КОНТАКТЫ</h5>
+					<h3 data-aos="fade-right" data-aos-duration="5000" class="title-text">СВЯЖИТЕСЬ С НАМИ</h3>
 					<div class="flex items-center gap-4 xsm:py-[50px] py-[30px] md:justify-normal justify-center">
 						<a class="social-btn" href="#!">
 							<img src="src/images/icons/wk.svg" alt="wk" width="15" height="9">
@@ -936,6 +939,9 @@
 		</main>
 
 	</div>
+
+	<!-- modal -->
+
 
 
 	<!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU"></script>

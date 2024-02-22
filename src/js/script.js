@@ -76,6 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const closeBtn = document.querySelector('.close-btn');
 	const openBtn = document.querySelector('#open-btn');
 	const menu = document.querySelector('.menu');
+	const menuSm = document.querySelector('.menu-sm');
 
 	openBtn.addEventListener('click', () => {
 		menu.classList.remove('active-menu');
@@ -83,4 +84,12 @@ window.addEventListener('DOMContentLoaded', () => {
 	closeBtn.addEventListener('click', () => {
 		menu.classList.add('active-menu');
 	})
+
+	menu.addEventListener('click', (e) => {
+		if (e.target === menu && !e.target.classList.contains('active-menu')) {
+			menu.classList.add('active-menu');
+		}
+	})
+
+
 })
